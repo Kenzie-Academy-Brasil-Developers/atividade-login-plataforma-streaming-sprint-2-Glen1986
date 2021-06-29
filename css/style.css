@@ -36,8 +36,20 @@ font-family: 'Fjalla One', sans-serif;
 font-family: 'Slabo 27px', serif;
 font-family: 'Source Sans Pro', sans-serif;
 
-*/
 
+    #E62213
+    #333333
+    #fff
+    #595959
+    rgba(0,0,0,0.6)
+    #B3B3B3
+    #1168D0
+
+*/
+:root{
+  --rojo: #e50914;
+  --titleColor: #ddd;
+}
 
 /* GERAL */
 
@@ -67,11 +79,12 @@ footer {
 main {
 }
 h1 {
-  color: #e50914;
+  color: var(--rojo);
 }
 form {
   background: rgba(0, 0, 0, 0.75);
   width: 100%;
+  padding:0 -8px 0 -8px;
 }
 .input__name,
 .input__senha,
@@ -81,6 +94,7 @@ form {
   height: 30px;
   background-color: #333333;
   margin-bottom: 10px;
+  color:#595959;
 }
 h2 {
   color: #ddd;
@@ -98,6 +112,50 @@ h2 {
   margin-left: 0;
   float: left
 }
+.input__checkbox,label{
+  position: relative;
+  margin-left: 0;
+  float: left;
+  font-size:13px;
+  font-weight:300;
+  color:#595959;
+}
+.table__td--right{
+  font-weight:bold;
+  color: var(--titleColor);
+}
+.table__td--robo{
+  width: auto;
+  align-items: end;
+}
+.table__td--link{
+  align-items: start;
+}
+p{
+  float: right;
+  position: relative;
+  top: -13px;
+  font-size: 13px;
+  font-weight:300;
+  color:#595959;
+}
+table{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+tr{
+  display: flex;
+  width:100%;
+}
+
+td{
+  font-size: 13px;
+  font-weight:300;
+  color:#595959;
+  display: flex;
+  flex-direction:column;
+}
 
 /* PÁGINA INICIAL */
 
@@ -110,24 +168,7 @@ h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
 }
-/* BODY */
 
-/* HEADER */
-header {
-}
-/* HEADER */
-
-/* FOOTER */
-footer {
-}
-/* FOOTER */
-
-/* P√ÅGINA INICIAL */
-main {
-}
-h1 {
-  color: #e50914;
-}
 form {
   height: 300px;
   width: 300px;
@@ -155,11 +196,47 @@ h2 {
   background-color: #e50914;
   color: #fff;
 }
-.input__checkbox {
+.input__checkbox,label{
   position: relative;
   margin-left: 0;
-  float: left
+  float: left;
+  font-size:13px;
+  font-weight:300;
+  color:#595959;
 }
+p{
+  float: right;
+  position: relative;
+  top: -13px;
+  font-size: 13px;
+  font-weight:300;
+  color:#595959;
+}
+table{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__td--right{
+  font-weight:bold;
+  color: var(--titleColor);
+}
+.table__td--robo{
+  width: auto;
+  align-items: end;
+}
+.table__td--link{
+  align-items: start;
+}
+td{
+  font-size: 13px;
+  font-weight:300;
+  color:#595959;
+  width: 100%;
+
+}
+
 
 /* P√ÅGINA INICIAL */
 
